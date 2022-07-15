@@ -10,11 +10,10 @@ namespace BankDio
 
         static void Main(string[] args)
         {
+            string opcaoUsuario = ObterOpcaoUsuario();
+
             while (opcaoUsuario.ToUpper() != "X")
             {
-                string opcaoUsuario = ObterOpcaoUsuario();
-
-            
                 switch (opcaoUsuario)
                 {
                     case "1":
@@ -36,7 +35,8 @@ namespace BankDio
                         Console.Clear();
                         break;
                 }
-            }
+                opcaoUsuario = ObterOpcaoUsuario();
+                            }
             Console.WriteLine("Obrigado por utilizar nossos serviços.");
             Console.ReadLine();
         }
@@ -87,7 +87,7 @@ namespace BankDio
 
         private static string ObterOpcaoUsuario()
         {
-            Console.WriteLine(" ========================");
+            Console.WriteLine("\r\n ========================");
             Console.WriteLine(" Dio Bank a seu dispor!");
             Console.WriteLine(" ========================= \r\n");
 
