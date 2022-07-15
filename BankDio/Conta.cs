@@ -21,7 +21,6 @@ namespace BankDio
             this.Nome = nome;
         }
 
-
         public bool Sacar(double valorSaque)
         {
             //Validação de saldo
